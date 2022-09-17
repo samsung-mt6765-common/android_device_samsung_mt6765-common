@@ -126,6 +126,9 @@ include device/mediatek/sepolicy_vndr/SEPolicy.mk
 # Vibration
 TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
+
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
