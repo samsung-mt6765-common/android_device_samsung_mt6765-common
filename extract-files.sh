@@ -58,6 +58,15 @@ if [ -z "${SRC}" ]; then
 	SRC="adb"
 fi
 
+function blob_fixup {
+	case "$1" in
+		vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service)
+			grep -q "android.hardware.power-V2-ndk_platform.so" "${2}" && \
+			"${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
+			;;
+	esac
+}
+
 if [ -z "${ONLY_TARGET}" ]; then
 	# Initialize the helper for common device
 	setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
