@@ -1,5 +1,9 @@
 # All blobs from a04exx-user 13 TP1A.220624.014 A042FXXS5CWJ2 release-keys, unless pinned
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
+
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mt6765.so
 
