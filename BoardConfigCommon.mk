@@ -93,5 +93,10 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Verified Boot
+BOARD_AVB_ENABLE := true
+BOARD_AVB_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+
 # Inherit the proprietary files
 include vendor/samsung/mt6765-common/BoardConfigVendor.mk
