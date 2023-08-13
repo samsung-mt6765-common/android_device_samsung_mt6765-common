@@ -98,5 +98,10 @@ BOARD_AVB_ENABLE := true
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 
+BOARD_AVB_BOOT_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_BOOT_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_BOOT_ROLLBACK_INDEX := 1
+BOARD_AVB_BOOT_ROLLBACK_INDEX_LOCATION := 1
+
 # Inherit the proprietary files
 include vendor/samsung/mt6765-common/BoardConfigVendor.mk
