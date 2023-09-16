@@ -68,6 +68,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder.vendor \
+    android.hidl.allocator@1.0.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
