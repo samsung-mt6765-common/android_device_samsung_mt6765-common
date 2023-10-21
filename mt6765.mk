@@ -148,6 +148,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayMT6765 \
     FrameworksResOverlayMT6765 \
+    SystemUIOverlayMT6765 \
     WiFiOverlayMT6765
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
