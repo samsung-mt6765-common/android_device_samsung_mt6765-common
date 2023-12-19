@@ -58,6 +58,19 @@ if [ -z "${SRC}" ]; then
 	SRC="adb"
 fi
 
+symlink_fixup(){
+	[ "${SRC}" != "adb" ] && {
+		local dir="$(dirname ${SRC}/${1})"
+		local fname="$(basename ${SRC}/${1})"
+		local plat="$(grep 'ro.board.platform' ${SRC}/vendor/build.prop | cut -d= -f2 | head -1)"
+		local fpath="${dir}/${plat}/${fname}"
+		[ -f "${fpath}" ] && {
+			cp -f "${fpath}" "${2}"
+		}
+	}
+}
+export -f symlink_fixup
+
 function blob_fixup {
 	case "$1" in
 		vendor/bin/hw/android.hardware.media.c2@1.2-mediatek)
@@ -70,6 +83,10 @@ function blob_fixup {
 			;;
 		vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc)
 			echo "$(cat ${2}) input" > "${2}"
+			;;
+		vendor/lib*/libdpframework.so | vendor/lib*/libmtk_drvb.so | \
+		vendor/lib*/libpq_prot.so)
+			symlink_fixup "${1}" "${2}"
 			;;
 		vendor/lib*/libmtkcam_stdutils.so)
 			grep -q "libutils.so" "${2}" && \
