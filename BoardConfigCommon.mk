@@ -21,5 +21,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := mt6765
+TARGET_NO_BOOTLOADER := true
+
 # Inherit the proprietary files
 include vendor/samsung/mt6765-common/BoardConfigVendor.mk
