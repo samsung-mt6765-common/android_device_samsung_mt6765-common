@@ -60,4 +60,9 @@
         <name>vendor.samsung.hardware.keymint</name>
         <fqname>ISehKeyMintFactory/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.nvram</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::INvram/default</fqname>
+    </hal>
 </manifest>
