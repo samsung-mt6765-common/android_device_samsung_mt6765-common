@@ -184,6 +184,13 @@ vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 
+# Connectivity
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
+vendor/firmware/WMT_SOC.cfg
+vendor/firmware/soc1_0_ram_mcu_1_1_hdr.bin
+vendor/firmware/txpowerctrl.cfg
+
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
