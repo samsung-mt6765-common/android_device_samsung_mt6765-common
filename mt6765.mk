@@ -37,6 +37,20 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     libdrm.vendor
 
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+    libkeymaster_messages.vendor \
+    libkeymaster_portable.vendor \
+    libkeymaster4_1support.vendor \
+    libpuresoftkeymasterdevice \
+    libsoft_attestation_cert.vendor
+
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V1-ndk_platform.vendor \
+    android.hardware.security.secureclock-V1-ndk_platform.vendor \
+    android.hardware.security.sharedsecret-V1-ndk_platform.vendor
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \

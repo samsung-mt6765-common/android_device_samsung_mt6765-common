@@ -33,3 +33,13 @@ vendor/lib64/mt6765/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
+
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint-service
+vendor/bin/hw/vendor.samsung.hardware.security.drk@2.0-service
+vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
+-vendor/etc/vintf/manifest/manifest_vendor.samsung.hardware.security.widevine.keyprov@1.0-service.xml
+vendor/etc/init/android.hardware.security.keymint-service.rc
+vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc
+vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov@1.0-service.rc
+vendor/lib64/lib_android_keymaster_keymint_utils.so

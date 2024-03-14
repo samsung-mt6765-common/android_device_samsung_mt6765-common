@@ -19,6 +19,18 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.keymint</name>
+        <fqname>IKeyMintDevice/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.secureclock</name>
+        <fqname>ISecureClock/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.sharedsecret</name>
+        <fqname>ISharedSecret/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.composer_ext</name>
         <transport>hwbinder</transport>
@@ -28,5 +40,13 @@
         <name>vendor.mediatek.hardware.mmagent</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::IMMAgent/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.keymint</name>
+        <fqname>ISehKeyMintExtension/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.keymint</name>
+        <fqname>ISehKeyMintFactory/default</fqname>
     </hal>
 </manifest>
