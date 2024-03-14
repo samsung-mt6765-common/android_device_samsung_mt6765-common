@@ -35,6 +35,10 @@ PRODUCT_PACKAGES += \
     init.sensor_1_0.rc \
     ueventd.mt6765.rc
 
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.mt6833.rc
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
