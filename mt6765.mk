@@ -7,6 +7,9 @@
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/mt6765-common/mt6765-common-vendor.mk)
 
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
