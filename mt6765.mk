@@ -20,6 +20,18 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6765 \
+    fstab.mt6765.ramdisk \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6765.common.rc \
+    init.mt6765.usb.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    ueventd.mt6765.rc
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
