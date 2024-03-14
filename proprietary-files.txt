@@ -4,6 +4,24 @@
 vendor/lib/libaedv.so
 vendor/lib64/libaedv.so
 
+# Audio
+vendor/lib/libMtkSpeechEnh.so
+vendor/lib/lib_iir.so
+vendor/lib/libaudiocomponentengine_vendor.so
+vendor/lib/libaudiocomponentenginec.so
+vendor/lib/libaudiodcrflt_vendor.so
+vendor/lib/libaudiofmtconv.so
+vendor/lib/libaudioloudc.so
+vendor/lib/libaurisysdemo.so
+vendor/lib/libbessound_hd_mtk_vendor.so
+vendor/lib/libblisrc32_vendor.so
+vendor/lib/libbwc.so
+vendor/lib/libcvsd_mtk.so
+vendor/lib/libmtklimiter_vendor.so
+vendor/lib/libmtkshifter_vendor.so
+vendor/lib/libspeech_enh_lib.so
+vendor/lib/vendor.mediatek.hardware.audio@7.1.so
+
 # Camera
 vendor/bin/lib3a.ccu.dm
 vendor/bin/lib3a.ccu.pm
