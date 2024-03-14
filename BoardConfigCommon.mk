@@ -96,6 +96,10 @@ TARGET_COPY_OUT_ODM := odm
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := mt6765
 
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
@@ -132,6 +136,9 @@ BOARD_AVB_VBMETA_VENDOR_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_VENDOR_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX := 1
 BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
+
+# Vintf
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest.xml
 
 # Inherit the proprietary files
 include vendor/samsung/mt6765-common/BoardConfigVendor.mk
