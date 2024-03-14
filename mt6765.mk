@@ -28,6 +28,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl
+
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \

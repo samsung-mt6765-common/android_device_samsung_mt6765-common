@@ -1,5 +1,8 @@
 # All blobs from a04exx-user 13 TP1A.220624.014 A042FXXS5CWJ2 release-keys, unless pinned
 
+# Gatekeeper
+vendor/lib64/hw/gatekeeper.mt6765.so
+
 # Graphics
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
