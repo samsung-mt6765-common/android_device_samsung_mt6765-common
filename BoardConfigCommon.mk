@@ -119,6 +119,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # VNDK
 BOARD_VNDK_VERSION := current
 
+# SELinux
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
+
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
