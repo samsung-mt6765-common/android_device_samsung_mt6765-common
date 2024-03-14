@@ -79,14 +79,6 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::IMMAgent/default</fqname>
     </hal>
-    <hal format="aidl">
-        <name>vendor.samsung.hardware.keymint</name>
-        <fqname>ISehKeyMintExtension/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.samsung.hardware.keymint</name>
-        <fqname>ISehKeyMintFactory/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mms</name>
         <transport>hwbinder</transport>
@@ -126,5 +118,18 @@
         <fqname>@3.0::IRadioOp/OpImsRILd2</fqname>
         <fqname>@3.0::IRadioOp/slot1</fqname>
         <fqname>@3.0::IRadioOp/slot2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.gnss</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::ISehGnss/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.keymint</name>
+        <fqname>ISehKeyMintExtension/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.keymint</name>
+        <fqname>ISehKeyMintFactory/default</fqname>
     </hal>
 </manifest>

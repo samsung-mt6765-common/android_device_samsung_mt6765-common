@@ -14,6 +14,23 @@ vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
+# GNSS
+vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
+vendor/bin/mnld
+vendor/bin/mtk_agpsd
+vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
+vendor/lib64/hw/android.hardware.gnss@2.1-impl.so
+vendor/lib64/hw/gps.default.so
+vendor/lib64/libDR.so
+vendor/lib64/libmnl.so
+
+# GNSS Configs
+vendor/etc/gnss/agps_profiles_conf2.xml
+vendor/etc/gnss/ca.pem
+vendor/etc/gnss/deleteLogCommands
+vendor/etc/gnss/mnl.prop
+vendor/etc/gnss/MNL_Config.xml
+
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mt6765.so
 
