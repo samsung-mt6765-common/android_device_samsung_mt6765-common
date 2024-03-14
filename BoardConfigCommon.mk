@@ -84,5 +84,9 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_ODM := odm
 
+# Platform
+BOARD_VENDOR := samsung
+TARGET_BOARD_PLATFORM := mt6765
+
 # Inherit the proprietary files
 include vendor/samsung/mt6765-common/BoardConfigVendor.mk
