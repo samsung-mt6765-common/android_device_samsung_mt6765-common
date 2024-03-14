@@ -88,5 +88,10 @@ TARGET_COPY_OUT_ODM := odm
 BOARD_VENDOR := samsung
 TARGET_BOARD_PLATFORM := mt6765
 
+# Recovery
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
+TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_F2FS := true
+
 # Inherit the proprietary files
 include vendor/samsung/mt6765-common/BoardConfigVendor.mk
