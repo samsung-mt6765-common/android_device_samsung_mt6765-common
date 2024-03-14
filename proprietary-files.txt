@@ -1,1 +1,35 @@
 # All blobs from a04exx-user 13 TP1A.220624.014 A042FXXS5CWJ2 release-keys, unless pinned
+
+# Graphics
+vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
+vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
+vendor/lib/egl/egl.cfg
+vendor/lib/hw/memtrack.default.so
+vendor/lib/hw/vulkan.mt6765.so
+vendor/lib/libDefaultFpsActor.so
+vendor/lib/libFrameRecord.so
+vendor/lib/libNoFpsActor.so
+vendor/lib/libaal_key.so
+vendor/lib/libgralloc_metadata.so
+vendor/lib/libgralloctypes_mtk.so
+vendor/lib/libion_mtk.so
+vendor/lib/libion_ulit.so
+vendor/lib/libladder.so
+vendor/lib/libudf.so
+vendor/lib/mt6765/libmtk_drvb.so:vendor/lib/libmtk_drvb.so
+vendor/lib64/hw/memtrack.default.so
+vendor/lib64/hw/vulkan.mt6765.so
+vendor/lib64/libDefaultFpsActor.so
+vendor/lib64/libFrameRecord.so
+vendor/lib64/libNoFpsActor.so
+vendor/lib64/libaal_key.so
+vendor/lib64/libgralloc_metadata.so
+vendor/lib64/libgralloctypes_mtk.so
+vendor/lib64/libion_mtk.so
+vendor/lib64/libion_ulit.so
+vendor/lib64/libladder.so
+vendor/lib64/libudf.so
+vendor/lib64/mt6765/libmtk_drvb.so:vendor/lib64/libmtk_drvb.so
+vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so

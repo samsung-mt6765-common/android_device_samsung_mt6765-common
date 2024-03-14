@@ -28,6 +28,15 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.composer@2.1-resources.vendor:64 \
+    android.hardware.graphics.composer@2.1.vendor:64 \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack@1.0-impl \
+    libdrm.vendor
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
