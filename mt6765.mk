@@ -174,6 +174,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.mt6833.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.1-service.multihal \
+    android.frameworks.sensorservice@1.0.vendor \
+    libsensorndkbridge
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
