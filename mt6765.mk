@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    FMRadio
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd

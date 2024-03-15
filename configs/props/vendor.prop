@@ -54,6 +54,10 @@ vendor.camera.mdp.cz.enable=1
 vendor.camera.mdp.dre.enable=0
 vendor.camera.stereo.mode=1
 
+# FM Radio
+persist.vendor.connsys.fm_chipid=mt6631
+ro.vendor.fm.platform=mt6631
+
 # GNSS
 ro.vendor.gps.chrdev=gps_drv
 ro.vendor.mtk_agps_app=1
