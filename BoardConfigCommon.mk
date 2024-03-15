@@ -122,6 +122,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
+# Vibration
+TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
+
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
