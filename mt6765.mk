@@ -135,6 +135,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlayMT6765 \
     FrameworksResOverlayMT6765 \
     WiFiOverlayMT6765
 
