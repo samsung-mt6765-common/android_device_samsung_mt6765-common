@@ -135,7 +135,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayMT6765
+    FrameworksResOverlayMT6765 \
+    WiFiOverlayMT6765
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
