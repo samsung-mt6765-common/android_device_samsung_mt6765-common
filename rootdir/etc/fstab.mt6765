@@ -13,8 +13,6 @@ odm_dlkm					     /odm_dlkm		       ext4	ro		wait,avb,logical,first_stage_mount,
 /dev/block/platform/bootdevice/by-name/protect2      /mnt/vendor/protect_s     ext4     noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic       wait,check,formattable
 /dev/block/platform/bootdevice/by-name/nvdata        /mnt/vendor/nvdata        ext4     noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic       wait,check,formattable
 /dev/block/platform/bootdevice/by-name/nvcfg         /mnt/vendor/nvcfg         ext4     noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic       wait,check,formattable
-/dev/block/platform/bootdevice/by-name/prism         /prism                    ext4     ro,barrier=1             nofail,avb,first_stage_mount
-/dev/block/platform/bootdevice/by-name/optics        /optics                   ext4     ro,barrier=1             nofail,avb,first_stage_mount
 /dev/block/platform/bootdevice/by-name/efs           /mnt/vendor/efs           ext4     noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic       wait,check,formattable
 /devices/platform/externdevice*                      auto                      auto     defaults              voldmanaged=sdcard:auto
 /devices/platform/mt_usb*                            auto                      vfat     defaults              voldmanaged=usb:auto
