@@ -238,7 +238,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    init.recovery.mt6833.rc
+    init.recovery.mt6765.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
