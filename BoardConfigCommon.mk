@@ -101,6 +101,7 @@ TARGET_COPY_OUT_ODM_DLKM := odm_dlkm
 
 # Platform
 BOARD_VENDOR := samsung
+BOARD_HAS_MTK_HARDWARE := true
 TARGET_BOARD_PLATFORM := mt6765
 
 # Power
