@@ -50,3 +50,6 @@ odm_dlkm					     /odm_dlkm		       ext4	ro		wait,avb,logical,first_stage_mount,
 /dev/block/platform/bootdevice/by-name/odmdtbo       /odmdtbo                  emmc     defaults              defaults
 /dev/block/platform/bootdevice/by-name/dtbo          /dtbo                     emmc     defaults              defaults
 /dev/block/platform/bootdevice/by-name/vbmeta        /vbmeta                   emmc     defaults              defaults
+
+# ZRam
+/dev/block/zram0                                     none                      swap     defaults              zramsize=55%
