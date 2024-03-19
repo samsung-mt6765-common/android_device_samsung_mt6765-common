@@ -228,6 +228,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6765 \
     fstab.mt6765.ramdisk \
+    init.ago.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6765.common.rc \
