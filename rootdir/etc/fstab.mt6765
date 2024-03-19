@@ -14,6 +14,7 @@ odm_dlkm					     /odm_dlkm		       ext4	ro		wait,avb,logical,first_stage_mount,
 /dev/block/platform/bootdevice/by-name/nvdata        /mnt/vendor/nvdata        ext4     noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic       wait,check,formattable
 /dev/block/platform/bootdevice/by-name/nvcfg         /mnt/vendor/nvcfg         ext4     noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic       wait,check,formattable
 /dev/block/platform/bootdevice/by-name/efs           /mnt/vendor/efs           ext4     noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic       wait,check,formattable
+/dev/block/platform/bootdevice/by-name/persist	     /mnt/vendor/persist       ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check,formattable
 /devices/platform/externdevice*                      auto                      auto     defaults              voldmanaged=sdcard:auto
 /devices/platform/mt_usb*                            auto                      vfat     defaults              voldmanaged=usb:auto
 /dev/block/platform/bootdevice/by-name/keydata       /keydata                  ext4     noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic,inlinecrypt      wait,check,formattable,fileencryption=aes-256-xts,nofail
